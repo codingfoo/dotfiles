@@ -1,0 +1,17 @@
+[user]
+ name = Bowen Masco
+ email = bowen@codingfoo.com
+ editor = emacs
+[color]
+ pager = true
+ ui = auto
+ diff = auto
+ status = auto
+ branch = auto
+[core]
+ excludesfile = "~/.gitexcludes"
+ whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
+[push]
+ default = current
+[alias]
+ lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative

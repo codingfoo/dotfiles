@@ -1,0 +1,5 @@
+.DS_Store
+.directory
+*.class
+*.elc
+*.rvmrc

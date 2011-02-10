@@ -1,0 +1,5 @@
+source .screenrc
+
+sessionname apps
+screen -t irssi irssi
+
