@@ -1,0 +1,142 @@
+set nocompatible		" Turn off backwards incompatiblity with vi
+
+" Key bindings / Mappings
+" mapleader
+let mapleader = ","
+
+map <Leader>s :source $MYVIMRC<CR>
+map <Leader>e :e $MYVIMRC<CR>
+
+" <leader>t mapped to command-t
+" <leader>c* mapped for nerdcommenter
+
+" clear search
+nnoremap <leader><space> :noh<cr>
+
+
+" map control-backspace to delete the previous word
+:imap <C-BS> <C-W>
+
+"""Function key mappings
+" f1 is help
+map <F2> :NERDTreeToggle<CR>
+map <F3> :Ack 
+map <F4> :TlistToggle<CR>
+map <F5> :Git 
+
+
+" Fix command typos (stolen from Adam Katz)
+nmap ; :
+
+" ` is more useful than ' but less accessible.
+nnoremap ' `
+nnoremap ` '
+
+" unmap arrow keys and make j and k work better
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+
+" Load Pathogen
+filetype off
+call pathogen#runtime_append_all_bundles()
+
+" File-type highlighting and configuration.
+" Run :filetype (without args) to see what you may have
+" to turn on yourself, or just set them all to be sure.
+filetype plugin indent on
+
+
+syntax on
+
+
+" Tabs
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+
+" Indentation
+set autoindent  " indent new lines
+set smartindent " auto insert indentation on braces etc
+
+
+" Completion
+set wildmenu			" Make tab completion show a menu
+set wildmode=list:longest	" Complete only up to the point of ambiguity
+set wildignore=*.o,*.pyc,*.elc,*.obj,*.class,.git,.svn
+
+
+" Search
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase			" Searching case sensitive only when search has capital
+set smartcase       " 
+set gdefault      " don't need /g after :s or :g, replace on entire line not just first instance
+set showmatch
+set hlsearch 			" Highlight search terms...
+set incsearch 			" ...dynamically as they are typed.
+
+
+set encoding=utf-8
+
+set scrolloff=3		" Scroll 3 lines instead of 1 when cursor goes off screen
+
+set showmode 			" Current mode is displayed on bottom line
+
+set showcmd 			" Show state of keyboard input
+
+set hidden        " Allow switching buffers without writing to disk
+
+set visualbell 			" Make bell visible instead of audible
+
+set cursorline      " Make current line visible
+
+set ttyfast         " Speed up redrawing operations
+
+set ruler			" Show line, column, %, at bottom of window
+
+set backspace=indent,eol,start 	" Intuitive backspacing in insert mode
+
+set mousehide     " Hide mouse while typing
+
+setlocal spell spelllang=en_us " Set spelling language
+set nospell
+
+set history=1000		" Keep a longer history
+
+runtime macros/matchit.vim	" Enable extended % matching
+
+set shortmess=atI 		" Stifle many interruptive prompts
+
+set confirm " use confirm instead of aborting an action
+
+set lazyredraw " Don't update the display while executing macros
+
+
+
+" Backups & Files
+set backup			" Enable creation of backup file.
+set backupdir=~/.vim/backups 	" Where backups will go.
+set directory=~/.vim/tmp     	" Where temporary files will go.
+let g:yankring_history_file = ".yankring_history" " Where the yankring plugin history should go
+
+
+" Theme
+set title			" vim will set title
+
+
+" au FocusLost * :wa " save on lost focus
+" set laststatus=2  
+" set relativenumber " show a relative line number instead of absolute line number
+" set undofile " create a file with undo history for each edited file
+" set number			" Show line numbers

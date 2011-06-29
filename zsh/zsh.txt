@@ -1,0 +1,14 @@
+commands
+
+environment
+
+aliases
+
+history
+  history
+  !#
+  !!
+
+completion
+
+prompt info

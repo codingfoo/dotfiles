@@ -1,0 +1,12 @@
+.DS_Store
+.directory
+.svn
+*.o
+*.pyc
+*.elc
+*.obj
+*.class
+*.rbc
+*~
+*.swp
+.rvmrc

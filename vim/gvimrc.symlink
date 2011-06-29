@@ -1,0 +1,7 @@
+set guioptions-=r 	  " No right scrollbar
+set guioptions-=l 	  " No left scrollbar
+set guioptions-=b	 	  " No bottom scrollbar
+set guioptions-=T	 	  " No toolbar
+set guioptions+=c 		" Use console dialogs where possible
+
+colorscheme vilight

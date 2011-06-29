@@ -1,0 +1,5 @@
+git/gitconfig.symlink
+irssi/irssi.symlink/config
+vim/vim.symlink/backups
+vim/vim.symlink/tmp
+vim/vim.symlink/bundle
