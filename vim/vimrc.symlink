@@ -22,7 +22,7 @@ nnoremap <leader><space> :noh<cr>
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
 function! StripWhitespace ()
-    exec ':%s/ \+$//gc'
+    exec ':%s/ \+$//g'
 endfunction
 map <Leader>w :call StripWhitespace ()<CR>
 
