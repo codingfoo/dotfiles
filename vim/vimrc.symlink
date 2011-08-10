@@ -125,7 +125,7 @@ set backspace=indent,eol,start 	" Intuitive backspacing in insert mode
 set mousehide     " Hide mouse while typing
 
 setlocal spell spelllang=en_us " Set spelling language
-set nospell
+set nospell       " Turn off spelling, turn on as needed
 
 set history=1000		" Keep a longer history
 
@@ -137,7 +137,7 @@ set confirm " use confirm instead of aborting an action
 
 set lazyredraw " Don't update the display while executing macros
 
-
+set grepprg=ack " use ack instead of grep
 
 " Backups & Files
 set backup			" Enable creation of backup file.
