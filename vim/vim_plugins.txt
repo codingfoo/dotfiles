@@ -1,8 +1,8 @@
 Pathogen
 _________
 
-Vilight Theme
-_____________
+Now install each vim plugin into its own dir in the bundle dir.
+
 
 Ack
 ___
@@ -44,6 +44,10 @@ ________________
     [count]<leader>cy - same as cc but yanks first
 
     <leader>c$ - Comments the current line from the cursor to the end of line.
+
+
+Vilight Theme
+_____________
 
 
 Future plugins
