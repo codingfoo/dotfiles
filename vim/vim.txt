@@ -1,47 +1,27 @@
-text editor 
- requirements
-  reasonable start-up time
-  reasonable resource usage
-  learning curve is worth investment
-  fingers can remain on keyboard
-  multi-platform
-  open source
-  documented
-  discoverable/learn-able
-  extensible, no need to wait on developer for improvements
-  theme-able
-  customizable
-  keybindings customizable
-  handle big files
-  handle binary files
-  tool integration, compiler, debugger, profiler, vcs, etc
-
 functionality to learn/explore
- buffers multiple open files
+  buffers multiple open files
 
- bookmarks
- pair completion / electric pair / brace matching
+  bookmarks
+  pair completion / electric pair / brace matching
 
- yaml-mode
+  yaml-mode
 
- code folding - hides stuff you dont need to read
- line wrap - save from horizontal scrolling
- narrow to region
- window numbering
- rvm
- on save remove trailing whitespace
- project management
- regular expression builder
- lint
-
-vim think about
+  code folding - hides stuff you dont need to read
+  line wrap - save from horizontal scrolling
+  narrow to region
+  window numbering
+  rvm
+  on save remove trailing whitespace
+  project management
+  regular expression builder
+  lint
   open recent file
    need plugin, or viminfo, Do i need?
   auto save file
    should i use
   undo tree
 
-vim learned
+notes
   pattern
     register
     repeats
@@ -140,24 +120,3 @@ vim learned
     :!<command> % run external command on entire file 
     :r!<command> get results of command and put in buffer
     :'a,'b!<command>   filter through command
-
-
-vim plugins
- pathogen
- command-t
-  ,t
- ack
-  :Ack [options] {pattern} [{directory}]  
- nerdcommenter - commenting
-  comment/uncomment - toggle comment
-  selection toggles a comment
- nerdtree - project browser
- snipmate - snippets
- taglist - tags support, ctags
- fugitive - git support
- rails.vim - rails extras
- surround/repeat - braces extras
- yankring - copy and paste extras, ring 
- syntastic - inline compilation / syntax checking / flymake  
- supertab - tab completion
- indent object - add new motion for blocks

@@ -1,0 +1,61 @@
+capabilities
+  startup time
+  resource usage
+  learning curve
+  no remove fingers from keyboard
+  multiplaform
+  open source
+  documentation
+  discoverable/learnability
+  extensibility
+  themes
+  keybindings customizable
+  handle big files
+  handle binary files
+  tool integration, compiler, debugger, profiler, vcs, etc
+
+text editor features
+  help/documentation
+  open file
+    open file 
+    open file in project
+    remote files
+  save file
+  split screen
+  multiple open files
+  run external command
+  macros
+  bookmarks
+  registers
+  navigation
+    up/down
+    goto-line
+    word/paragraph
+  cut
+  copy
+  paste
+  undo
+  redo
+  comment
+  uncomment
+  pair completion / electric pair
+  spell checking
+  completion
+    expand tags
+    snippets
+    text prediction
+  inline compilation / syntax checking / flymake  
+  reformatting
+  find
+  find and replace
+  column edit / rectangle mode
+  syntax highlighting - improves reading
+  indentation - improves reading for humans and is significant in python
+  code folding - hides stuff you dont need to read
+  line wrap - save from horizontal scrolling
+  repeat command
+
+
+
+
+
