@@ -1,0 +1,68 @@
+Pathogen
+_________
+
+Vilight Theme
+_____________
+
+Ack
+___
+
+    :Ack [options] {pattern} [{directory}] 
+
+opens a quickfix window
+next entry
+
+    :cn
+
+close quickfix window
+
+    :ccl
+
+open a quickfix window
+
+    :cw
+
+jump to a specific error
+
+    :cc #
+
+
+Command-t
+____________
+
+    <leader> t
+
+
+NerdCommenter
+________________
+
+
+    [count]<leader>c<space> - Toggle comment(not individually)
+
+    [count]<leader>ci - Toggles the comment state of the selected line(s) individually
+
+    [count]<leader>cy - same as cc but yanks first
+
+    <leader>c$ - Comments the current line from the cursor to the end of line.
+
+
+Future plugins
+______________
+
+Delimitmate: https://github.com/Raimondi/delimitMate
+CloseTag: http://github.com/docunext/closetag.vim
+SuperTab: https://github.com/ervandew/supertab
+Fugitive: https://github.com/tpope/vim-fugitive
+Tagbar: https://github.com/majutsushi/tagbar
+Surround: https://github.com/tpope/vim-surround
+YankRing.vim
+nerdtree
+snipmate.vim
+syntastic
+vim-fuzzyfinder
+vim-indent-object
+vim-l9
+vim-rails
+vim-rake
+vim-repeat
+
