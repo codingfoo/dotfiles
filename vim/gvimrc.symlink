@@ -4,4 +4,5 @@ set guioptions-=b	 	  " No bottom scrollbar
 set guioptions-=T	 	  " No toolbar
 set guioptions+=c 		" Use console dialogs where possible
 
-colorscheme vilight
+" The silent! silences any errors if the theme is not available
+silent! colorscheme vilight
