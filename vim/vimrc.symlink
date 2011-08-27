@@ -27,15 +27,12 @@ endfunction
 map <Leader>w :call StripWhitespace ()<CR>
 
 
-" map control-backspace to delete the previous word
+" map control-backspace to delete the previous word in insert mode
 :imap <C-BS> <C-W>
 
 """Function key mappings
 " f1 is help
-map <F2> :NERDTreeToggle<CR>
-map <F3> :Ack 
-map <F4> :TlistToggle<CR>
-map <F5> :Git 
+map <F2> :Ack 
 
 
 " Fix command typos (stolen from Adam Katz)
@@ -129,8 +126,6 @@ set nospell       " Turn off spelling, turn on as needed
 
 set history=1000		" Keep a longer history
 
-runtime macros/matchit.vim	" Enable extended % matching
-
 set shortmess=atI 		" Stifle many interruptive prompts
 
 set confirm " use confirm instead of aborting an action
@@ -138,6 +133,7 @@ set confirm " use confirm instead of aborting an action
 set lazyredraw " Don't update the display while executing macros
 
 set grepprg=ack " use ack instead of grep
+
 
 " Backups & Files
 set backup			" Enable creation of backup file.
@@ -148,10 +144,7 @@ let g:yankring_history_file = ".yankring_history" " Where the yankring plugin hi
 
 " Theme
 set title			" vim will set title
+set background=dark
 
-
-" au FocusLost * :wa " save on lost focus
-" set laststatus=2  
-" set relativenumber " show a relative line number instead of absolute line number
-" set undofile " create a file with undo history for each edited file
-" set number			" Show line numbers
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"

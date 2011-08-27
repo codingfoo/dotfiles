@@ -50,12 +50,17 @@ Vilight Theme
 _____________
 
 
+SuperTab
+________
+https://github.com/ervandew/supertab
+
+
+
 Future plugins
 ______________
 
 Delimitmate: https://github.com/Raimondi/delimitMate
 CloseTag: http://github.com/docunext/closetag.vim
-SuperTab: https://github.com/ervandew/supertab
 Fugitive: https://github.com/tpope/vim-fugitive
 Tagbar: https://github.com/majutsushi/tagbar
 Surround: https://github.com/tpope/vim-surround
