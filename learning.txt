@@ -1,25 +1,10 @@
-:help FOO
-. Repeat
-gg=G'' reindent file
-%! insert unix command
-/ search
-:%s/// replace
-* next instance of word under cursor
-# prev instance of word under cursor
+cd shorthand
+cd
+~
+- prev dir
 
-qa start recording macro
-q  stop recording macro
-@a play macro
-
-c change
-v<motion> select something
-
-
-
-pushd popd
 
 History
-
 !!	expands to the last command and all arguments
 !-3	3rd-to-last command and all arguments
 !^	first argument of the last command in history
@@ -32,12 +17,3 @@ History
 ^foo^bar	last command with the first occurrence of "foo" replaced with "bar"
 !:gs/foo/bar	last command with all occurrences of "foo" replaced with "bar"
 <any_above>:p  	prints command without executing
-
-.inputrc
-
-brace expansions
-
-cd shorthand
-cd
-~
-- prev dir
