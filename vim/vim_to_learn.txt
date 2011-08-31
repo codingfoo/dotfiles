@@ -1,0 +1,21 @@
+buffers multiple open files
+
+bookmarks
+pair completion / electric pair / brace matching
+
+yaml-mode
+
+code folding - hides stuff you dont need to read
+line wrap - save from horizontal scrolling
+narrow to region
+window numbering
+rvm
+on save remove trailing whitespace
+project management
+regular expression builder
+lint
+open recent file
+ need plugin, or viminfo, Do i need?
+auto save file
+ should i use
+undo tree
