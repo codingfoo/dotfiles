@@ -1,0 +1,28 @@
+commands
+
+
+environment
+
+
+aliases
+
+
+History
+  !!	expands to the last command and all arguments
+  !-3	3rd-to-last command and all arguments
+  !^	first argument of the last command in history
+  !:2	2nd argument of the last command
+  !$	last argument of the last command
+  !*	all arguments of the last command, but not the command itself
+  !42	expands to the 42nd command in the history list
+  !foo	last command beginning with "foo"
+  !?baz	last command containing "baz"
+  ^foo^bar	last command with the first occurrence of "foo" replaced with "bar"
+  !:gs/foo/bar	last command with all occurrences of "foo" replaced with "bar"
+  <any_above>:p  	prints command without executing
+
+
+cd shorthand
+  cd
+  ~
+  - prev dir

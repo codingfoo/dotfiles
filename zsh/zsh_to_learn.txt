@@ -1,0 +1,14 @@
+dir stack
+  pushd popd
+
+
+completion
+
+
+prompt info
+
+
+.inputrc
+
+
+brace expansions
