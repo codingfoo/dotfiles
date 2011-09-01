@@ -17,7 +17,3 @@ precmd () { vcs_info }
 #fi
 
 PROMPT='${vcs_info_msg_0_} %~ %# '
-
-if [ -e "$HOME/.rvm/scripts/rvm" ]; then
-   PS1="\$(~/.rvm/bin/rvm-prompt)$PS1"
-fi
