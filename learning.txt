@@ -1,3 +1,16 @@
+P paste before
+p paste after
+cw change word from cursor to end of word
+ZZ save and quit
+#G goto line #
+e end of this word: word is letters and underscores
+w start of next word
+E end of non whitespace seperated: word is whitespace seperated
+W start of next non whitespace
+% goto correspond ([{
+
+
+
 cd shorthand
 cd
 ~
