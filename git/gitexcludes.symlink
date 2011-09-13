@@ -1,6 +1,3 @@
-.DS_Store
-.directory
-.svn
 *.o
 *.pyc
 *.elc
@@ -8,5 +5,11 @@
 *.class
 *.rbc
 *~
+\#*
+.\#*
 *.swp
+.svn
+.DS_Store
+.directory
 .rvmrc
+.rbenv-version
