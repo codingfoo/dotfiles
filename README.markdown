@@ -2,9 +2,10 @@
 
 ## Install
 
-- `git clone git://github.com/holman/dotfiles ~/.dotfiles`
+- `git clone git://github.com/codingfoo/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `rake install`
+- 'edit ~/.dotfiles/zsh/zshrc.symlink'
 
 The install rake task will symlink the appropriate files in `.dotfiles` to your
 home directory. Everything is configured and tweaked within `~/.dotfiles`,
