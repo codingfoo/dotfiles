@@ -19,3 +19,13 @@ open recent file
 auto save file
  should i use
 undo tree
+
+sessions
+mks <name>
+
+mark
+m<letter>
+'a jump to mark
+
+"<letter><action><subject>
+"bP paste contents of b register

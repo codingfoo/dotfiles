@@ -74,4 +74,14 @@ vim-l9
 vim-rails
 vim-rake
 vim-repeat
-
+align
+conqueterm
+indent object
+surround
+zoomwin
+markdown
+haml
+sass/scss
+vwilight
+space.vim
+syntastic
