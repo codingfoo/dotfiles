@@ -1,3 +1,4 @@
 --- 
-BUNDLE_BUILD__MYSQL: --with-mysql-config=/usr/local/Cellar/mysql/5.5.14/bin/mysql_config
 BUNDLE_PATH: vendor/bundle
+BUNDLE_BIN: bin
+BUNDLE_BUILD__MYSQL: --with-mysql-config=/usr/local/Cellar/mysql/5.5.14/bin/mysql_config
