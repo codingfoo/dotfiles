@@ -1,0 +1,68 @@
+# File types
+*~
+\#*
+.\#*
+*.swp
+*.bak
+:*:
+
+# Directories
+.svn
+.sass-cache
+credentials
+node_modules
+public/assets
+elasticsearch-2.4
+
+# Specific files
+.directory
+tags
+TAGS
+.powrc
+.vagrant
+*.sublime-workspace
+custom_plan.rb
+zeus.json
+.envrc
+*.retry
+brakeman_results.html
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyo
+*.pyc
+*.elc
+*.obj
+*.rbc
+
+# Archives
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

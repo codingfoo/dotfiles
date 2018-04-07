@@ -1,0 +1,23 @@
+[include]
+  path = .gitemail
+[core]
+  excludesfile = ~/.gitexcludes
+  whitespace = blank-at-eol, space-before-tab, tab-in-indent, blank-at-eof, trailing-space, cr-at-eol
+[alias]
+  wdiff = diff -w
+  lg = log --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -[%cn] %s %Cgreen(%ci)%Creset%Cblue%d%Creset'
+[color]
+  ui = auto #turn on all color options for terminal output
+[push]
+  default = current
+[fetch]
+  prune = true
+[branch]
+  autosetuprebase = always
+[merge]
+  keepBackup = false;
+[diff]
+  prompt = false
+  compactionHeuristic = true
+[mergetool]
+  keepBackup = false
