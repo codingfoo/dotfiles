@@ -50,9 +50,10 @@ fi
 [[ -f $HOME/.asdf/completions/asdf.bash ]] && . "$HOME/.asdf/completions/asdf.bash"
 
 
+[ -f ~/.local.sh ] && source ~/.local.sh
+
+
 # Prompt ###
-[[ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]] && . /usr/local/etc/bash_completion.d/git-prompt.sh
-[[ -f /usr/share/git/completion/git-prompt.sh ]] && . /usr/share/git/completion/git-prompt.sh
 [[ -f ~/.bin/git-prompt.sh ]] && . ~/.bin/git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=1
