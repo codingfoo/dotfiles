@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -x
+
+TODAY=`find ~/notes/ -name today-*`
+
+cp ~/notes/today-*.txt ~/notes/today-$(date +"%Y%m%d").txt
+mv ${TODAY} ${TODAY/\/today-/}
