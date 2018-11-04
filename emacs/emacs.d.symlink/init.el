@@ -1,26 +1,22 @@
-(require 'package)
+; From https://github.com/technomancy/emacs-starter-kit/
+(defun bm-reinit-libs ()
+  (interactive)
+  (let ((generated-autoload-file (concat user-emacs-directory "my-autoload.el")))
+    (dolist (d (directory-files (concat user-emacs-directory "lib") t "^[^\.]"))
+      (dolist (f (directory-files d t "\\.el$"))
+	      (byte-compile-file f))
+      (update-directory-autoloads d))))
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(dolist (l (directory-files (concat user-emacs-directory "lib") nil "^[^\.]"))
+  (add-to-list 'load-path (concat user-emacs-directory "lib/" l))
+  (autoload (intern l) (concat l ".el")))
 
-(package-initialize)
+(when (not (file-exists-p (concat user-emacs-directory "my-autoload.el")))
+  (bm-reinit-libs))
+
+(load (concat user-emacs-directory "my-autoload.el"))
 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
- '(package-selected-packages (quote (solarized-theme ##))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-(set-default-font "Monaco 16")
-
-(load-theme 'solarized-dark)
+; Customizations
+(add-to-list 'custom-theme-load-path (concat user-emacs-directory "lib/" "solari
+zed-emacs"))
