@@ -4,7 +4,7 @@
   (let ((generated-autoload-file (concat user-emacs-directory "my-autoload.el")))
     (dolist (d (directory-files (concat user-emacs-directory "lib") t "^[^\.]"))
       (dolist (f (directory-files d t "\\.el$"))
-	      (byte-compile-file f))
+       (byte-compile-file f))
       (update-directory-autoloads d))))
 
 (dolist (l (directory-files (concat user-emacs-directory "lib") nil "^[^\.]"))
@@ -17,10 +17,11 @@
 (load (concat user-emacs-directory "my-autoload.el"))
 
 
-(add-to-list 'custom-theme-load-path (concat user-emacs-directory "lib/" "solarized-emacs"))
+(load-theme 'wombat t)
 
-(load-theme 'solarized-dark t)
+(require 'better-defaults)
 
+(set-default-font "Monaco 18")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
