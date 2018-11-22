@@ -6,7 +6,10 @@ export ALTERNATE_EDITOR="vim"
 
 # Path ###
 export PATH="/usr/local/sbin:$PATH"
+
 export PATH="$HOME/.bin:$PATH"
+[ -d ~/.bin.local ] && export PATH="$HOME/.bin.local:$PATH"
+
 export PATH="$HOME/go/bin:$PATH"
 
 
