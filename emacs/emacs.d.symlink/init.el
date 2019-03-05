@@ -21,7 +21,8 @@
 
 (require 'better-defaults)
 
-(set-default-font "Monaco 18")
+(set-frame-font "Monaco 18" nil t)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
