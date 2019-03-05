@@ -11,7 +11,7 @@
 [push]
   default = current
 [fetch]
-  prune = true
+	prune = true
 [branch]
   autosetuprebase = always
 [merge]
