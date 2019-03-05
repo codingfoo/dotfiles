@@ -17,7 +17,7 @@
 (load (concat user-emacs-directory "my-autoload.el"))
 
 
-(load-theme 'wombat t)
+(load-theme 'tango-dark t)
 
 (require 'better-defaults)
 
