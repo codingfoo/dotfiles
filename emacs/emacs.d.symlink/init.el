@@ -26,10 +26,11 @@
 
 (setq org-agenda-files '("~/b0m00jo/"))
 
+(eval-after-load 'org
 '(progn
     (add-to-list 'org-structure-template-alist
 '("t" "* Daily-?
-|  Time | Plan | Revised | Notes |
+|  Time(MDT) | Plan | Revised | Notes |
 |-------+------+---------+-------|      
 |  6:00 |      |         |       |
 |  6:30 |      |         |       |
@@ -56,7 +57,7 @@
 |  5:00 |      |         |       |
 |  5:30 |      |         |       |
 |  6:00 |      |         |       |
-|--------------------------------|")))
+|--------------------------------|"))))
 
 
 (custom-set-variables
