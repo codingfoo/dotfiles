@@ -1,0 +1,35 @@
+export EDITOR="vim"
+export VISUAL="vim"
+export ALTERNATE_EDITOR="vim"
+
+# Path ###
+export PATH="/usr/local/sbin:$PATH"
+
+export PATH="$HOME/.bin:$PATH"
+
+
+# Load local config ###
+[ -d ~/.bin.local ] && export PATH="$HOME/.dotfiles/local/bin:$PATH"
+
+[ -f ~/.local.sh ] && source "$HOME/.dotfiles/local/overrides.sh"
+
+
+# Direnv ###
+if [ -x "$(command -v direnv)" ]; then
+  eval "$(direnv hook zsh)"
+fi
+
+# ASDF ###
+[[ -f $HOME/.asdf/asdf.sh ]] && . "$HOME/.asdf/asdf.sh"
+
+# Prompt ###
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' formats "(%b %m%u%c)"
+precmd() {
+    vcs_info
+}
+
+setopt prompt_subst
+NEWLINE=$'\n'
+PROMPT='%~ ${vcs_info_msg_0_}% ${NEWLINE}# '
