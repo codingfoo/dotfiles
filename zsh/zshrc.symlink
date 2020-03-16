@@ -12,8 +12,9 @@ export PATH="$HOME/.bin:$PATH"
 # Load machine local config ###
 [ -d ~/.bin.local ] && export PATH="$HOME/.dotfiles/local/bin:$PATH"
 
-[ -f ~/.local.sh ] && source "$HOME/.dotfiles/local/shell.sh"
-
+for file in ~/.dotfiles/local/shell/*; do
+    source "$file"
+done
 
 # History ###
 # Leave duplicates in history but ignore when searching
