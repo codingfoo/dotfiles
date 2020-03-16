@@ -12,7 +12,7 @@ export PATH="$HOME/.bin:$PATH"
 # Load machine local config ###
 [ -d ~/.bin.local ] && export PATH="$HOME/.dotfiles/local/bin:$PATH"
 
-[ -f ~/.local.sh ] && source "$HOME/.dotfiles/local/overrides.sh"
+[ -f ~/.local.sh ] && source "$HOME/.dotfiles/local/shell.sh"
 
 
 # History ###
