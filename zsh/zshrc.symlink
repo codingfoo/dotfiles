@@ -2,16 +2,30 @@ export EDITOR="vim"
 export VISUAL="vim"
 export ALTERNATE_EDITOR="vim"
 
+
 # Path ###
 export PATH="/usr/local/sbin:$PATH"
 
 export PATH="$HOME/.bin:$PATH"
 
 
-# Load local config ###
+# Load machine local config ###
 [ -d ~/.bin.local ] && export PATH="$HOME/.dotfiles/local/bin:$PATH"
 
 [ -f ~/.local.sh ] && source "$HOME/.dotfiles/local/overrides.sh"
+
+
+# History ###
+# Leave duplicates in history but ignore when searching
+# Allows me to review previous work during a time period
+setopt HIST_IGNORE_DUPS
+
+setopt HIST_IGNORE_SPACE
+
+HISTORY_IGNORE="(ls|cd|pwd|exit|fg|clear)"
+
+HISTSIZE=10000
+SAVEHIST=10000
 
 
 # Direnv ###
@@ -19,8 +33,10 @@ if [ -x "$(command -v direnv)" ]; then
   eval "$(direnv hook zsh)"
 fi
 
+
 # ASDF ###
 [[ -f $HOME/.asdf/asdf.sh ]] && . "$HOME/.asdf/asdf.sh"
+
 
 # Prompt ###
 autoload -Uz vcs_info
