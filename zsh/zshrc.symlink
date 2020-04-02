@@ -16,14 +16,15 @@ for file in ~/.dotfiles/local/shell/*.sh; do
     source "$file"
 done
 
+
 # History ###
 # Leave duplicates in history but ignore when searching
-# Allows me to review previous work during a time period
+# Allows me to review previous work during a session
 setopt HIST_IGNORE_DUPS
 
 setopt HIST_IGNORE_SPACE
 
-HISTORY_IGNORE="(ls|cd|pwd|exit|fg|clear)"
+#HISTORY_IGNORE="(ls|cd|pwd|exit|fg|clear)"
 
 HISTSIZE=10000
 SAVEHIST=10000
