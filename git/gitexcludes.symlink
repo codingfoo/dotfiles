@@ -15,6 +15,7 @@ public/assets
 elasticsearch-*
 .vscode
 .idea
+vendor
 
 # Specific files
 .directory
