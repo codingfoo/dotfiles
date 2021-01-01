@@ -1,4 +1,4 @@
 # improve colors
 set -g default-terminal 'screen-256color'
-setw -g mouse on
+set -g mouse on
 
