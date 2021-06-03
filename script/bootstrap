@@ -122,7 +122,8 @@ install_dotfiles () {
 
 install_dotfiles
 
-chmod +x system/bin.symlink/*
+chmod +x bin/*
+chmod +x local/bin/*
 
 echo ''
 echo '  All installed!'
