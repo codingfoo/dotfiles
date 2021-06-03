@@ -14,6 +14,15 @@ export PATH="$HOME/.dotfiles/bin:$PATH"
 export PATH="$HOME/.dotfiles/local/bin:$PATH"
 
 
+# Completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+
 # Load machine local config ###
 for file in ~/.dotfiles/local/shell/*.sh; do
     source "$file"
