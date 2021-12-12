@@ -3,11 +3,12 @@
 [core]
   excludesfile = ~/.gitexcludes
   whitespace = blank-at-eol, space-before-tab, tab-in-indent, blank-at-eof, trailing-space, cr-at-eol
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
   wdiff = diff -w
   lg = log --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -[%cn] %s %Cgreen(%ci)%Creset%Cblue%d%Creset'
 [color]
-  ui = auto #turn on all color options for terminal output
+	ui = true
 [push]
   default = current
 [fetch]
@@ -21,3 +22,20 @@
   compactionHeuristic = true
 [mergetool]
   keepBackup = false
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[url "git@gecgithub01.walmart.com:"]
+	insteadOf = https://gecgithub01.walmart.com/
