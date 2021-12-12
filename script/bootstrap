@@ -113,6 +113,9 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
+  mkdir -p "$HOME/.config/nvim"
+  link_file "$DOTFILES_ROOT/nvim/init.vim" "$HOME/.config/nvim/init.vim"
+
   mkdir -p "$HOME/.vim"
   link_file "$DOTFILES_ROOT/vim/vim/autoload" "$HOME/.vim/autoload"
   link_file "$DOTFILES_ROOT/vim/vim/plugged" "$HOME/.vim/plugged"
