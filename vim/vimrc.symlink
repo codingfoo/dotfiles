@@ -6,22 +6,22 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 
 " Fuzzy file find
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '/usr/local/opt/fzf'
 
 " Find in files
-Plug 'mileszs/ack.vim'
+"Plug 'mileszs/ack.vim'
 
 " Collection of language syntax files
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 " Linting
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 " Solarized theme
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 " vim-unimpaired
 " vim-surround
@@ -128,10 +128,6 @@ set cmdheight=1  " Set the command area to be one line
 " ---------------------------------------------------------------------------
 " Plugins config
 " ---------------------------------------------------------------------------
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
@@ -144,7 +140,10 @@ let maplocalleader = "  "
 """Function key mappings
 " f1 is help
 
-nnoremap <c-p> :FZF<cr>
+map <leader>e :edit $MYVIMRC<CR>
+map <leader>r :source $MYVIMRC<CR>
+map <leader>p :FZF<CR>
+map <leader>h :noh<CR>
 
 
 " ---------------------------------------------------------------------------
@@ -177,11 +176,6 @@ autocmd BufWritePre *.py,*.rb,*.js,*.ex,*.exs :call <SID>StripTrailingWhitespace
 " ----------------------------------------------------------------------------
 "  Theme
 " ----------------------------------------------------------------------------
-if !has('gui_running')
-  let g:solarized_termtrans=1
-  let g:solarized_termcolors=256
-endif
-
 set background=light
 " The silent! silences any errors if the theme is not available
 silent! colorscheme solarized
