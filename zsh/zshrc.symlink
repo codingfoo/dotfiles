@@ -40,14 +40,16 @@ type nvim >/dev/null 2>&1 && alias vi=nvim
 # History ###
 # Leave duplicates in history but ignore when searching
 # Allows me to review previous work during a session
-setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
 
 setopt HIST_IGNORE_SPACE
 
-#HISTORY_IGNORE="(ls|cd|pwd|exit|fg|clear)"
+setopt EXTENDED_HISTORY
+
+HISTORY_IGNORE="(ls|cd|pwd|exit|fg|clear)"
 
 HISTSIZE=10000
-SAVEHIST=10000
+SAVEHIST=1000000000
 
 
 # Direnv ###
