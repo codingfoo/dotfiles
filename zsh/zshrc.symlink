@@ -73,3 +73,6 @@ precmd() {
 setopt prompt_subst
 NEWLINE=$'\n'
 PROMPT='%~ ${vcs_info_msg_0_}% ${NEWLINE}# '
+
+# fzf ###
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
