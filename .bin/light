@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Highlight code for use with presentation software.
+#
+
+src="pbpaste"
+
+if [ -z "$2" ]
+then
+  src="pbpaste"
+else
+  src="cat $2"
+fi
+
+$src | highlight -O rtf --syntax $1 --font Inconsolata --style solarized-light --font-size 35 | pbcopy

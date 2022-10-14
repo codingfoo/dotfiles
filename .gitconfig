@@ -1,0 +1,43 @@
+[include]
+  path = .gitemail
+[core]
+  excludesfile = ~/.gitexcludes
+  whitespace = blank-at-eol, space-before-tab, tab-in-indent, blank-at-eof, trailing-space, cr-at-eol
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+  wdiff = diff -w
+  lg = log --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -[%cn] %s %Cgreen(%ci)%Creset%Cblue%d%Creset'
+[color]
+  ui = true
+[push]
+  default = current
+[fetch]
+  prune = true
+[branch]
+  autosetuprebase = always
+[merge]
+  keepBackup = false;
+[diff]
+  prompt = false
+  compactionHeuristic = true
+[mergetool]
+  keepBackup = false
+[interactive]
+  diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "diff"]
+  meta = 11
+  frag = magenta bold
+  func = 146 bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[init]
+  defaultBranch = main
+[remote "origin"]
+  prune = true
