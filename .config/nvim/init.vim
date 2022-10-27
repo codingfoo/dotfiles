@@ -2,6 +2,8 @@
 " Plugins
 " ---------------------------------------------------------------------------
 
+lua require('plugins')
+
 "neovim/nvim-lspconfig
 "nvim-treesitter/nvim-treesitter, {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
@@ -188,6 +190,6 @@ autocmd BufWritePre *.py,*.rb,*.js,*.ex,*.exs :call <SID>StripTrailingWhitespace
 " ----------------------------------------------------------------------------
 "  Theme
 " ----------------------------------------------------------------------------
-set background=light
+set background=dark
 " The silent! silences any errors if the theme is not available
 silent! colorscheme solarized
