@@ -8,6 +8,7 @@ type nvim >/dev/null 2>&1 && alias vi=nvim
 # Path ###
 # Change path precedence for homebrew ###
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
 # Add path for dotfiles bin dir ###
